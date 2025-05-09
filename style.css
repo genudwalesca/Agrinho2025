@@ -1,3 +1,4 @@
+/* Reset e base */
 * {
   margin: 0;
   padding: 0;
@@ -5,22 +6,23 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background: linear-gradient(to bottom, #f9f9f9, #e0ffe0);
+  font-family: Arial, sans-serif;
+  background-color: #f4fdf4;
   color: #333;
 }
 
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Cabeçalho e navegação */
 header {
   background: #2e7d32;
   color: white;
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: center;
-  border-bottom: 5px solid #1b5e20;
-}
-
-header h1 {
-  font-size: 2.5rem;
 }
 
 nav {
@@ -30,8 +32,8 @@ nav {
 }
 
 nav a {
-  margin: 0 15px;
   color: #1b5e20;
+  margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -40,48 +42,96 @@ nav a:hover {
   text-decoration: underline;
 }
 
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+/* Seções */
+.section {
+  padding: 3rem 0;
 }
 
-.highlight {
-  background: #f1f8e9;
-  padding: 1rem;
-  border-left: 6px solid #66bb6a;
-  margin: 1rem 0;
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2e7d32;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 2rem;
+.light-bg {
+  background: #eafbea;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .card {
   background: white;
-  border: 1px solid #c8e6c9;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .card h3 {
   color: #388e3c;
+  margin-bottom: 0.5rem;
 }
 
+/* Galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery .img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Linha do tempo */
+.timeline {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.timeline li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #66bb6a;
+  font-size: 1.5rem;
+}
+
+/* Rodapé */
 footer {
   background: #1b5e20;
   color: white;
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 0;
   margin-top: 2rem;
 }
 
-@media (max-width: 700px) {
-  .grid {
-    grid-template-columns: 1fr;
+/* Responsividade */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
   }
 }

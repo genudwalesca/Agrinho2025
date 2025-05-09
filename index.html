@@ -4,157 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Festejando a Conexão Campo-Cidade</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      background: linear-gradient(to bottom, #f9f9f9, #e0ffe0);
-      color: #333;
-    }
-
-    header {
-      background: #2e7d32;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 5px solid #1b5e20;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    nav {
-      background: #a5d6a7;
-      text-align: center;
-      padding: 1rem 0;
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: #1b5e20;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .highlight {
-      background: #f1f8e9;
-      padding: 1rem;
-      border-left: 6px solid #66bb6a;
-      margin: 1rem 0;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #c8e6c9;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .card h3 {
-      color: #388e3c;
-    }
-
-    footer {
-      background: #1b5e20;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 700px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Festejando a Conexão Campo-Cidade</h1>
-    <p>União, cultura e desenvolvimento para todos</p>
+    <div class="container">
+      <h1>Festejando a Conexão Campo-Cidade</h1>
+      <p>União, Cultura e Desenvolvimento Sustentável</p>
+    </div>
   </header>
 
   <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#iniciativas">Iniciativas</a>
-    <a href="#curiosidades">Curiosidades</a>
-    <a href="#contato">Contato</a>
+    <div class="container">
+      <a href="#inicio">Início</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#linha-do-tempo">História</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </div>
   </nav>
 
-  <section id="sobre">
-    <h2>Sobre o Projeto</h2>
-    <p>
-      O programa Agrinho celebra a conexão entre o campo e a cidade, promovendo o respeito mútuo, o desenvolvimento sustentável e a valorização da cultura de ambos os ambientes.
-    </p>
-    <div class="highlight">
-      🌽 O campo produz, a cidade consome e transforma. A integração gera oportunidades, educação e prosperidade.
+  <section id="inicio" class="section">
+    <div class="container">
+      <h2>Bem-vindo ao Agrinho</h2>
+      <p>
+        Este projeto celebra a harmonia entre os mundos rural e urbano. Conectando tradições do campo com inovações da cidade, promovemos uma sociedade mais justa, educada e sustentável.
+      </p>
+      <blockquote>
+        🌱 "Campo e cidade: diferentes raízes, o mesmo futuro."
+      </blockquote>
     </div>
   </section>
 
-  <section id="iniciativas">
-    <h2>Iniciativas de Conexão</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Feiras Locais</h3>
-        <p>Eventos que aproximam produtores rurais dos consumidores urbanos, fortalecendo a economia regional.</p>
-      </div>
-      <div class="card">
-        <h3>Educação Rural e Urbana</h3>
-        <p>Escolas integradas com conteúdos que valorizam a produção agrícola e a vida urbana de forma equilibrada.</p>
-      </div>
-      <div class="card">
-        <h3>Tecnologia no Campo</h3>
-        <p>Uso de drones, sensores e gestão inteligente para melhorar a produção e proteger o meio ambiente.</p>
-      </div>
-      <div class="card">
-        <h3>Turismo Rural</h3>
-        <p>Experiências autênticas no campo que ensinam e encantam visitantes urbanos, promovendo a cultura local.</p>
+  <section id="projetos" class="section light-bg">
+    <div class="container">
+      <h2>Projetos em Destaque</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Feira do Produtor Local</h3>
+          <p>Um evento mensal que conecta agricultores com consumidores urbanos.</p>
+        </div>
+        <div class="card">
+          <h3>Turismo Educativo</h3>
+          <p>Visitas escolares a sítios e fazendas para aprender sobre agricultura sustentável.</p>
+        </div>
+        <div class="card">
+          <h3>Escola Conectada</h3>
+          <p>Parcerias entre escolas urbanas e rurais trocando saberes e experiências.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="curiosidades">
-    <h2>Curiosidades</h2>
-    <ul>
-      <li>🌱 Mais de 70% dos alimentos consumidos nas cidades vêm de pequenos produtores rurais.</li>
-      <li>🚜 A mecanização do campo ajudou a reduzir o êxodo rural e aumentar a produtividade.</li>
-      <li>🌐 A internet no campo está ampliando o acesso à informação e ao mercado para agricultores.</li>
-    </ul>
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2>Galeria de Momentos</h2>
+      <div class="gallery">
+        <div class="img" style="background-image: url('https://via.placeholder.com/300x200?text=Campo');"></div>
+        <div class="img" style="background-image: url('https://via.placeholder.com/300x200?text=Cidade');"></div>
+        <div class="img" style="background-image: url('https://via.placeholder.com/300x200?text=Feira');"></div>
+        <div class="img" style="background-image: url('https://via.placeholder.com/300x200?text=Turismo');"></div>
+      </div>
+    </div>
   </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Quer saber mais ou participar? Envie um e-mail para <strong>contato@agrinho.org</strong></p>
+  <section id="linha-do-tempo" class="section light-bg">
+    <div class="container">
+      <h2>Linha do Tempo da Conexão</h2>
+      <ul class="timeline">
+        <li><strong>Década de 1950:</strong> Êxodo rural começa a crescer.</li>
+        <li><strong>Anos 80:</strong> Incentivo ao pequeno produtor rural.</li>
+        <li><strong>2000:</strong> A cidade começa a valorizar a origem dos alimentos.</li>
+        <li><strong>2020:</strong> Programas como o Agrinho aproximam campo e cidade.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="equipe" class="section">
+    <div class="container">
+      <h2>Equipe Agrinho</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Maria Oliveira</h3>
+          <p>Coordenadora Rural</p>
+        </div>
+        <div class="card">
+          <h3>João Silva</h3>
+          <p>Educador Urbano</p>
+        </div>
+        <div class="card">
+          <h3>Ana Souza</h3>
+          <p>Comunicação e Cultura</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section light-bg">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>📧 contato@agrinho.org.br</p>
+      <p>📍 Av. das Comunidades, 123 - Brasil</p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Agrinho - Conectando Campo e Cidade com Educação e Cultura</p>
+    <div class="container">
+      <p>&copy; 2025 Agrinho. Todos os direitos reservados.</p>
+    </div>
   </footer>
 </body>
 </html>
